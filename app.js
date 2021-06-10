@@ -26,9 +26,9 @@ generateBtn.addEventListener('click', function (e) {
     const value = parseInt(amount.value);
     const random = Math.floor(Math.random() * texts.length);
     
-    if (value < 0 && window.location == 'file:///home/chronos/u-6bd29e45b3bc8c8d2ea956218f5b313e9f137347/Downloads/random-lorem/index.html') {
+    if (value < 0 && window.location == 'index.html') {
         alert('Enter an empty data to randomly generate or the number of paragraphs you want.');
-    } else if (value < 0 && window.location == 'file:///home/chronos/u-6bd29e45b3bc8c8d2ea956218f5b313e9f137347/Downloads/random-lorem/spanish.html') {
+    } else if (value < 0 && window.location == 'spanish.html') {
       alert('Introduce un dato vacío para generar aleatoriamente o la cantidad de párrafos que quieres.');
     } else if (isNaN(value) || value === 0 || value > texts.length) {
         contParagraphs.innerHTML = `<p>${texts[random]}</p>`;
